@@ -12,8 +12,8 @@ RUN wget https://github.com/jwilder/dockerize/releases/download/$DOCKERIZE_VERSI
 
 COPY package*.json ./
 
+RUN npm i
+
 COPY . .
 
 EXPOSE 3333
-
-RUN npm i
